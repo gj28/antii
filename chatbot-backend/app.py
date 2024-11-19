@@ -508,7 +508,7 @@ def custom_responses(question):
     else:
         return "Please be more specific about the company and its services.\nThank you for understanding. "
 
-@app.route('/chat', methods=['POST'])
+@app.route('/apii', methods=['POST'])
 def chat():
     data = request.get_json()
     question = data.get("message")
