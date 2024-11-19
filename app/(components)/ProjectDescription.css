@@ -1,0 +1,88 @@
+.project-card-container {
+    perspective: 1000px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  /* The actual card */
+  .project-card {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+  }
+  
+  /* When flipped, rotate the card */
+  .project-card.flipped {
+    transform: rotateY(180deg);
+  }
+  
+  /* Front of the card (image and title) */
+  .project-card-front, .project-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Front side of the card */
+  .project-card-front {
+    background-color: #1e1e1e;
+    color: white;
+  }
+  
+  /* Back side of the card (description) */
+  .project-card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+    padding: 15px;
+  }
+  
+  /* Image styling */
+  .project-image {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Title styling */
+  .project-title {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  /* Tags styling */
+  .tags {
+    margin-top: 10px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Individual tag styling */
+  .tag {
+    background-color: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  /* Description styling */
+  .project-description {
+    font-size: 1em;
+    line-height: 1.4;
+  }

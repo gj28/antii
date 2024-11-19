@@ -1,0 +1,20 @@
+nltk
+fuzzywuzzy
+flask
+flask_cors
+langchain
+langchain-community
+langchain_chroma
+
+openai
+ipykernel
+streamlit
+huggingface_hub
+python-Levenshtein
+
+
+
+
+# Note Use lemmitization or stemming in both user question and prdefine response
+# Make seperate json file tO store the response as i am having less time to perform it
+
